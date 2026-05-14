@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karan Shakarwal — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Syne for display headings, DM Sans for body — elegant, modern pairing -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">KS<span class="dot">.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <!-- Hamburger for mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <!-- Background grid decoration -->
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow fade-up">Hello, I'm</p>
+      <h1 class="hero-name fade-up delay-1">Karan<br/>Shakarwal</h1>
+      <p class="hero-tagline fade-up delay-2">
+        Aspiring Software Developer &nbsp;/&nbsp; Problem Solver &nbsp;/&nbsp; Web Enthusiast
+      </p>
+      <div class="hero-cta fade-up delay-3">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="KaranShakarwal_ResumeFinal.pdf" class="btn btn-outline" download>Download Resume</a>
+      </div>
+    </div>
+
+    <!-- Decorative accent element -->
+    <div class="hero-accent" aria-hidden="true"></div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label fade-up">About Me</div>
+      <div class="about-grid">
+        <!-- Left: avatar / monogram block -->
+        <div class="about-avatar fade-up delay-1">
+          <img src="photo.jpeg" alt="Karan Shakarwal" class="avatar-photo">
+          <div class="avatar-badge">B.Tech IT · 2027</div>
+        </div>
+        <!-- Right: bio text -->
+        <div class="about-text fade-up delay-2">
+          <h2 class="section-heading">Building things<br/>for the web.</h2>
+          <p>
+            I'm a third-year B.Tech Information Technology student at Jaipur Engineering College and Research Centre, currently maintaining a CGPA of 8.25. I enjoy crafting responsive, accessible web experiences and solving algorithmic challenges.
+          </p>
+          <p>
+            Beyond coding, I've represented my college at the Smart India Hackathon and coordinated large-scale academic events — experiences that shaped my ability to collaborate under pressure and think end-to-end about a product.
+          </p>
+          <p>
+            I'm actively seeking opportunities where I can contribute meaningful work, grow fast, and be around people who care deeply about what they build.
+          </p>
+          <div class="about-meta">
+            <div class="meta-item"><span class="meta-label">Location</span><span>Jaipur, India</span></div>
+            <div class="meta-item"><span class="meta-label">Education</span><span>JECRC · IT</span></div>
+            <div class="meta-item"><span class="meta-label">Available</span><span class="available-dot">Open to roles</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-label fade-up">Technical Skills</div>
+      <h2 class="section-heading fade-up delay-1">What I work with.</h2>
+
+      <div class="skills-categories fade-up delay-2">
+
+        <div class="skill-category">
+          <h3 class="category-title">Web Development</h3>
+          <div class="skill-chips">
+            <span class="chip">HTML5</span>
+            <span class="chip">CSS3</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">React.js</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-title">Languages</h3>
+          <div class="skill-chips">
+            <span class="chip">C</span>
+            <span class="chip">C++</span>
+            <span class="chip">Python</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-title">Databases</h3>
+          <div class="skill-chips">
+            <span class="chip">MongoDB</span>
+            <span class="chip">MySQL</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-title">Tools & Platforms</h3>
+          <div class="skill-chips">
+            <span class="chip">Git</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">VS Code</span>
+            <span class="chip">REST APIs</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-label fade-up">Projects</div>
+      <h2 class="section-heading fade-up delay-1">Things I've built.</h2>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card fade-up delay-1">
+          <div class="card-number">01</div>
+          <div class="card-body">
+            <h3 class="card-title">Virtual Password Authentication System</h3>
+            <p class="card-desc">
+              A dynamic virtual keyboard-based login system designed to mitigate phishing and keylogging attacks. Implements client-side secure authentication logic with a clean, intuitive UI.
+            </p>
+            <div class="card-stack">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/karan-21-web/Dynamic-Virtual-Password-System" target="_blank" rel="noopener" class="card-link">
+              View on GitHub <span class="arrow">→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card fade-up delay-2">
+          <div class="card-number">02</div>
+          <div class="card-body">
+            <h3 class="card-title">Amazon Clone — E-Commerce UI</h3>
+            <p class="card-desc">
+              A pixel-faithful e-commerce frontend clone featuring product listings, a functional shopping cart, and responsive layouts — focusing heavily on UI/UX quality and frontend performance.
+            </p>
+            <div class="card-stack">
+              <span>JavaScript</span><span>HTML</span><span>CSS</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/karan-21-web/Amazon-clone" target="_blank" rel="noopener" class="card-link">
+              View on GitHub <span class="arrow">→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card fade-up delay-3">
+          <div class="card-number">03</div>
+          <div class="card-body">
+            <h3 class="card-title">SIH Hackathon Prototype</h3>
+            <p class="card-desc">
+              Collaborated in a 6-member team at Smart India Hackathon to design and prototype a real-world problem solution under strict time constraints — from ideation to a working demo.
+            </p>
+            <div class="card-stack">
+              <span>React.js</span><span>Python</span><span>MongoDB</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/karanshakarwal" target="_blank" rel="noopener" class="card-link">
+              View on GitHub <span class="arrow">→</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESUME ===== -->
+  <section class="section resume-section" id="resume">
+    <div class="container">
+      <div class="resume-block fade-up">
+        <div class="resume-text">
+          <div class="section-label">Resume</div>
+          <h2 class="section-heading">Want the full picture?</h2>
+          <p>Download my resume for a complete overview of my education, experience, skills, and achievements.</p>
+        </div>
+        <a href="KaranShakarwal_ResumeFinal.pdf" class="btn btn-primary btn-large" download>
+          Download Resume &nbsp;↓
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-label fade-up">Contact</div>
+      <h2 class="section-heading fade-up delay-1">Let's talk.</h2>
+      <p class="contact-sub fade-up delay-2">Have a role, project, or question? My inbox is open.</p>
+
+      <div class="contact-grid">
+
+        <!-- Contact info -->
+        <div class="contact-info fade-up delay-2">
+          <div class="contact-item">
+            <span class="contact-icon">✉</span>
+            <div>
+              <div class="contact-label">Email</div>
+              <a href="mailto:karanshakarwal.it27@gmail.com">karanshakarwal.it27@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">in</span>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <a href="https://linkedin.com/in/karanshakarwal" target="_blank" rel="noopener">linkedin.com/in/karanshakarwal</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">&lt;/&gt;</span>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <a href="https://github.com/karanshakarwal" target="_blank" rel="noopener">github.com/karanshakarwal</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <form class="contact-form fade-up delay-3" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="nav-logo">KS<span class="dot">.</span></span>
+      <p>© 2025 Karan Shakarwal · Built with HTML, CSS &amp; JS</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
